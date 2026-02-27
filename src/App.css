@@ -1,0 +1,6 @@
+/* App-level resets - overrides Vite boilerplate */
+#root {
+  min-height: 100vh;
+}
+
+/* Remove Vite's default center layout */

@@ -1,0 +1,194 @@
+.experience {
+    position: relative;
+    overflow: hidden;
+    background: var(--bg-secondary);
+}
+
+.exp__orb {
+    width: 380px;
+    height: 380px;
+    top: 20%;
+    right: -80px;
+    animation-delay: 1.5s;
+}
+
+.exp__timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.exp__line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(var(--accent-cyan), var(--accent-purple));
+    transform-origin: top;
+}
+
+.exp__item {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: calc(50% + 32px);
+    padding-bottom: 48px;
+    position: relative;
+}
+
+.exp__item.right {
+    justify-content: flex-start;
+    padding-right: 0;
+    padding-left: calc(50% + 32px);
+}
+
+.exp__dot {
+    position: absolute;
+    left: 50%;
+    top: 24px;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid var(--bg-secondary);
+    z-index: 1;
+}
+
+.exp__dot.color-cyan {
+    background: var(--accent-cyan);
+    box-shadow: 0 0 10px var(--accent-cyan);
+}
+
+.exp__dot.color-purple {
+    background: var(--accent-purple);
+    box-shadow: 0 0 10px var(--accent-purple);
+}
+
+.exp__dot.color-pink {
+    background: var(--accent-pink);
+    box-shadow: 0 0 10px var(--accent-pink);
+}
+
+.exp__card {
+    width: 100%;
+    max-width: 400px;
+    padding: 24px;
+}
+
+.exp__card.color-cyan:hover {
+    box-shadow: var(--shadow-glow-cyan);
+}
+
+.exp__card.color-purple:hover {
+    box-shadow: var(--shadow-glow-purple);
+}
+
+.exp__card.color-pink:hover {
+    box-shadow: 0 0 30px rgba(236, 72, 153, 0.15);
+}
+
+.exp__card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.exp__role {
+    font-family: var(--font-primary);
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.exp__company {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.exp__badge {
+    flex-shrink: 0;
+    padding: 3px 10px;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.exp__badge--cyan {
+    background: rgba(0, 212, 255, 0.1);
+    color: var(--accent-cyan);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+}
+
+.exp__badge--purple {
+    background: rgba(168, 85, 247, 0.1);
+    color: var(--accent-purple);
+    border: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+.exp__badge--pink {
+    background: rgba(236, 72, 153, 0.1);
+    color: var(--accent-pink);
+    border: 1px solid rgba(236, 72, 153, 0.3);
+}
+
+.exp__meta {
+    display: flex;
+    gap: 16px;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    margin-bottom: 14px;
+}
+
+.exp__meta span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.exp__points {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.exp__points li {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    padding-left: 16px;
+    position: relative;
+    line-height: 1.5;
+}
+
+.exp__points li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--accent-cyan);
+}
+
+@media (max-width: 700px) {
+    .exp__line {
+        left: 16px;
+    }
+
+    .exp__item,
+    .exp__item.right {
+        justify-content: flex-start;
+        padding-right: 0;
+        padding-left: 48px;
+    }
+
+    .exp__dot {
+        left: 16px;
+    }
+
+    .exp__card {
+        max-width: 100%;
+    }
+}
