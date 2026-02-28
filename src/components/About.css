@@ -141,6 +141,28 @@
     font-size: 0.97rem;
 }
 
+.about__resume-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 28px;
+    background: var(--accent-gradient);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-radius: 50px;
+    text-decoration: none;
+    width: fit-content;
+    transition: var(--transition);
+    box-shadow: 0 4px 20px rgba(0, 212, 255, 0.3);
+}
+
+.about__resume-btn:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 28px rgba(0, 212, 255, 0.5);
+}
+
 .about__highlights {
     display: grid;
     grid-template-columns: 1fr 1fr;

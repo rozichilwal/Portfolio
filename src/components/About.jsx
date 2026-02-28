@@ -83,6 +83,14 @@ export default function About() {
                             sharpening my problem-solving skills on competitive coding platforms.
                         </p>
 
+                        <a
+                            href="/resume.pdf"
+                            download="Rozi_Resume.pdf"
+                            className="about__resume-btn"
+                        >
+                            📄 Download Resume
+                        </a>
+
                         {/* <div className="about__highlights">
                             {[
                                 '🎯 Detail-oriented & quality-focused',
