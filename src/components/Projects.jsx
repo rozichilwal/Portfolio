@@ -11,7 +11,7 @@ const projects = [
         tags: ['React.js', 'Tailwind CSS', 'Express.js', 'MongoDB', 'Google Gemini API'],
         category: 'Full Stack',
         github: 'https://github.com/rozichilwal/AI-resume-analyzer.git',
-        live: '#',
+        // live: '#',
         gradient: 'linear-gradient(135deg, #0f2027, #203a43, #2c5364)',
         emoji: '🤖',
     },
@@ -22,7 +22,7 @@ const projects = [
         tags: ['React.js', 'Vite', 'Tailwind CSS', 'Express.js', 'Node.js', 'MongoDB'],
         category: 'Full Stack',
         github: 'https://github.com/rozichilwal/Slack-clone.git',
-        live: '#',
+        // live: '#',
         gradient: 'linear-gradient(135deg, #0a3d62, #1e3799)',
         emoji: '💬',
     },
@@ -33,7 +33,7 @@ const projects = [
         tags: ['React.js', 'Spring Boot', 'PostgreSQL', 'Java'],
         category: 'Full Stack',
         github: 'https://github.com/rozichilwal/Phegon-Airline-Portal.git',
-        live: '#',
+        // live: '#',
         gradient: 'linear-gradient(135deg, #1a1a2e, #16213e, #0f3460)',
         emoji: '✈️',
     },
@@ -44,7 +44,7 @@ const projects = [
         tags: ['React', 'Chart.js', 'LocalStorage', 'CSS'],
         category: 'Frontend',
         github: 'https://github.com/rozichilwal/expenses-tracker.git',
-        live: '#',
+        // live: '#',
         gradient: 'linear-gradient(135deg, #134e5e, #71b280)',
         emoji: '💰',
     },
@@ -55,7 +55,7 @@ const projects = [
         tags: ['React.js', 'Recharts', 'React Router', 'Vite', 'CSS3'],
         category: 'Frontend',
         github: 'https://github.com/rozichilwal/Inventory-Dashboard.git',
-        live: '#',
+        // live: '#',
         gradient: 'linear-gradient(135deg, #3d1a1a, #6a2c2c)',
         emoji: '📊',
     },
@@ -66,7 +66,7 @@ const projects = [
         tags: ['HTML', 'CSS', 'JavaScript', 'GNews API'],
         category: 'Frontend',
         github: 'https://github.com/rozichilwal/Github-Finder.git',
-        live: '#',
+        // live: '#',
         gradient: 'linear-gradient(135deg, #1a1a1a, #2d2d2d)',
         emoji: '�',
     },
@@ -129,9 +129,9 @@ export default function Projects() {
                                     <a href={project.github} target="_blank" rel="noreferrer" className="overlay-btn">
                                         <FiGithub /> Code
                                     </a>
-                                    <a href={project.live} target="_blank" rel="noreferrer" className="overlay-btn">
+                                    {/* <a href={project.live} target="_blank" rel="noreferrer" className="overlay-btn">
                                         <FiExternalLink /> Live
-                                    </a>
+                                    </a> */}
                                 </div>
                             </div>
 
