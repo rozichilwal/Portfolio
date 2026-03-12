@@ -84,7 +84,7 @@ export default function About() {
                         </p>
 
                         <a
-                            href="/Rozi_Chilwal_CV.pdf"
+                            href="/Rozi_Chilwal_cv.pdf"
                             download="Rozi_Chilwal_Resume.pdf"
                             className="about__resume-btn"
                         >
