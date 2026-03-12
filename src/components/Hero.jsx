@@ -94,19 +94,7 @@ export default function Hero() {
                 </motion.div>
             </div>
 
-            <motion.div
-                className="hero__scroll-hint"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1.4, duration: 0.6 }}
-            >
-                <ScrollLink to="about" smooth duration={600} offset={-70}>
-                    <div className="scroll-mouse">
-                        <div className="scroll-wheel" />
-                    </div>
-                    <span>Scroll down</span>
-                </ScrollLink>
-            </motion.div>
+
         </section>
     );
 }
