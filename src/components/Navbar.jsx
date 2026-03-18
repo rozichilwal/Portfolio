@@ -49,7 +49,7 @@ export default function Navbar() {
                     ))}
                     <li>
                         <a
-                            href="/Rozi_Chilwal_cv.pdf"
+                            href="/Rozi_Chilwal_CV.pdf"
                             className="btn btn-primary navbar__resume"
                             target="_blank"
                             rel="noreferrer"
